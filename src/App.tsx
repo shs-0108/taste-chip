@@ -1,12 +1,8 @@
 import "./App.css";
-import { Button } from "./components/ui/button";
+import RootRoute from "./root-route";
 
 function App() {
-  return (
-    <div className="text-2xl font-bold">
-      Taste Chip !<Button>칩!</Button>
-    </div>
-  );
+  return <RootRoute />;
 }
 
 export default App;
