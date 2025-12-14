@@ -19,7 +19,10 @@ export default function HeaderLayout() {
           <div className="text-3xl font-extrabold text-red-600">Taste Chip</div>
         </Link>
         <div className="relative mr-20 flex items-center">
-          <Input className="flex h-11 w-140 min-w-50 rounded-4xl border-none bg-white" />
+          <Input
+            className="flex h-11 w-140 min-w-50 rounded-4xl border-none bg-white pl-7"
+            placeholder="오늘 먹고 싶은 음식을 찾아보세요 ! "
+          />
           <Button
             onClick={onClickButton}
             className="hover:bg-background-[#ffffff] absolute right-1 flex cursor-pointer rounded-4xl bg-white"
