@@ -5,33 +5,38 @@ import { Link } from "react-router";
 export default function SignUpPage() {
   return (
     <div className="flex h-[715px] min-h-[340px] items-center justify-center">
-      <div className="flex h-90 w-100 flex-col items-center justify-center gap-2 rounded-2xl bg-white px-10">
+      <div className="flex w-100 flex-col items-center justify-center gap-2 rounded-2xl bg-white px-10 py-10">
         <div className="flex w-full flex-col gap-2">
           <Input
             className="flex w-full"
             type="email"
-            placeholder="aaa@email.com"
+            placeholder="이메일을 입력해주세요"
           />
           <Input
             className="flex w-full"
             type="password"
-            placeholder="password"
+            placeholder="비밀번호를 입력해주세요"
           />
           <Input
             className="flex w-full"
             type="text"
-            placeholder="2~8글자 닉네임"
+            placeholder="닉네임을 입력해주세요"
           />
+          <div className="text-muted-foreground flex w-full text-[12px]">
+            2~8글자의 영문,한글,숫자만 입력 가능합니다.
+          </div>
         </div>
-        <Button className="flex w-full min-w-[200px] text-lg">회원가입</Button>
+        <Button className="mt-5 flex w-full min-w-[200px] text-lg">
+          회원가입
+        </Button>
 
         <Link
-          className="text-muted-foreground flex w-full text-sm hover:underline"
+          className="text-muted-foreground flex w-full place-content-center text-sm hover:underline"
           to={"/sign-in"}
         >
-          이미 회원이신가요? 로그인하기
+          이미 회원이신가요? 로그인 하러가기
         </Link>
-        <Button className="mt-10 flex w-full bg-[#FFD23F] text-lg font-semibold text-white hover:bg-[#FFD23F] hover:text-black">
+        <Button className="mt-5 flex w-full bg-[#FFD23F] text-lg font-semibold text-white hover:bg-[#FFD23F] hover:text-black">
           카카오로 회원가입
         </Button>
       </div>

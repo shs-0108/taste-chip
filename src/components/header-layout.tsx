@@ -31,7 +31,8 @@ export default function HeaderLayout() {
           </Button>
         </div>
         <div className="flex items-center gap-5 rounded-4xl">
-          <Link to={"/profile/userId"} className="flex items-center gap-2">
+          {/* <Link to={"/profile/:userId"} className="flex items-center gap-2"> */}
+          <Link to={"/sign-in"} className="flex items-center gap-2">
             <img
               className="h-10 rounded-4xl"
               src={dafaultAvatar}
