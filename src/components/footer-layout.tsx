@@ -1,10 +1,12 @@
 export default function FooterLayout() {
   return (
-    <footer className="border-t bg-white py-10 text-gray-800">
+    <footer className="border-t border-[#d5d5d5] bg-white py-10">
       <div className="m-auto w-full max-w-300">
-        이메일 문의 : csohee108@gmail.com
+        <span className="text-sm text-[#555555]">
+          문의 : csohee108@gmail.com
+        </span>
         <br />
-        Copyright Ⓒ 2025 Hime
+        <span className="text-sm text-[#555555]">Copyright Ⓒ 2025 Hime</span>
       </div>
     </footer>
   );

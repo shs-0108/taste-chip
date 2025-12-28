@@ -20,7 +20,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { SearchIcon } from "lucide-react";
 import { useNavigate } from "react-router";
 
 export default function IndexPage() {
@@ -31,7 +30,7 @@ export default function IndexPage() {
   };
 
   return (
-    <div className="flex flex-col gap-5">
+    <div className="flex flex-col gap-5 pt-10 pb-15">
       <div className="flex h-90 flex-row gap-5">
         <div className={`flex basis-2/3 flex-col rounded-2xl bg-white p-8`}>
           <div className="mb-3 text-3xl font-bold">오늘은 여기 어떠세요?</div>
